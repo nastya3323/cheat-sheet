@@ -342,10 +342,10 @@ P.S. Если после ввода ```git log```/```git log --oneline``` вых
 
 ```mermaid
 graph LR;
-   untracked (неотслеживаемый) -- "git add" --> staged (в списке на коммит) + tracked (отслеживаемый);
-   staged (в списке на коммит) + tracked (отслеживаемый) -- 'git commit' --> tracked/commited (закомиченный);  	
-   tracked/commited (закомиченный) -- 'Изменения' --> modified (изменённый);
-   modified (изменённый) -- 'git add' --> staged (в списке на коммит) + tracked (отслеживаемый);	
+   untracked ('неотслеживаемый') -- "git add" --> staged ('в списке на коммит') + tracked ('отслеживаемый');
+   staged ('в списке на коммит') + tracked ('отслеживаемый') -- 'git commit' --> tracked/commited ('закомиченный');  	
+   tracked/commited ('закомиченный') -- 'Изменения' --> modified ('изменённый');
+   modified ('изменённый') -- 'git add' --> staged ('в списке на коммит') + tracked ('отслеживаемый');	
 ```
 
 Команда ```git status``` показывает следующие состояния:
