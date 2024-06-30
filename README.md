@@ -343,9 +343,9 @@ P.S. Если после ввода ```git log```/```git log --oneline``` вых
 ```mermaid
 graph LR;
    untracked -- "git add" --> staged + tracked;
-   staged + tracked -- 'git commit' --> tracked/commited;  	
+   staged -- 'git commit' --> tracked/commited;  	
    tracked/commited -- 'Изменения' --> modified;
-   modified -- 'git add' --> staged + tracked;	
+   modified -- 'git add' --> staged;	
 ```
 
 Команда ```git status``` показывает следующие состояния:
