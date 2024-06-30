@@ -342,7 +342,7 @@ P.S. Если после ввода ```git log```/```git log --oneline``` вых
 
 ```mermaid
 graph LR;
-   untracked -- "git add" --> staged + tracked;
+   untracked -- "git add" --> staged;
    staged -- 'git commit' --> tracked/commited;  	
    tracked/commited -- 'Изменения' --> modified;
    modified -- 'git add' --> staged;	
